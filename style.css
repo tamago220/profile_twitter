@@ -1,0 +1,360 @@
+@charset "UTF-8";
+
+
+html {scroll-behavior: smooth;}
+
+/* リセットCSS */
+
+html {
+    color: #000;
+    background: #fff;
+}
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+    margin: 0;
+    padding: 0;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+
+fieldset,
+img {
+    border: 0;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+    font-style: normal;
+    font-weight: normal;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+caption,
+th {
+    text-align: left;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+q:before,
+q:after {
+    content: "";
+}
+
+abbr,
+acronym {
+    border: 0;
+    font-variant: normal;
+}
+
+sup {
+    vertical-align: text-top;
+}
+
+sub {
+    vertical-align: text-bottom;
+}
+
+input,
+textarea,
+select,
+button {
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    *font-size: 100%;
+    border-radius: 0;
+    border: none;
+    appearance: none;
+    -webkit-appearance: none;
+    background-color: inherit;
+}
+
+input,
+textarea,
+select {
+    font-size: 16px;
+}
+
+textarea {
+    resize: vertical;
+    display: block;
+}
+
+button {
+    padding: 0;
+    cursor: pointer;
+}
+
+legend {
+    color: #000;
+}
+
+main {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+
+svg {
+    display: block;
+}
+
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    box-sizing: border-box;
+}
+
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* リセットCSS終了 */
+
+html {
+    background-color: #fff;
+}
+
+body {
+    line-height: 1.75;
+    font-size: 16px;
+    color: #333;
+    font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        font-size: 18px;
+    }
+}
+
+.other_list_item,.other_list_item_HW,.other_list_item_SW,.main .header02-item{
+    width: 90%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    font-size: 24px;
+}
+
+.header02 {
+    padding: 16px 24px;
+    background-color: #fafafa;
+}
+
+.header02-logo {
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+
+.header02-list {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 24px;
+}
+
+.main p{
+    list-style: none;
+    width: 90%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    margin-bottom: 15px;
+    border-bottom:solid #111 0.5px;
+}
+
+.main div{
+    list-style: none;
+    width: 90%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    margin-bottom: 15px;
+}
+
+/* 仮↓ */
+
+.account-in {
+    display:inline-flex;
+    float: left;
+    padding-left:25%;
+}
+
+.account-in .twitter:hover {
+    background-color:#3cb0dd;
+
+}
+
+.account-in .instagram:hover {
+    background-color:#e77ebe;
+
+}
+
+.discord_off:hover{
+    background-color:#7289da;
+    color: white;
+}
+
+.discord_comingsoon,.discord_off{
+    color: #7289da;
+}
+
+.discord_comingsoon:hover{
+    background-color: #7289da;
+    color: white;
+}
+
+.twitter,.instagram,.discord_off,.discord_comingsoon {
+    padding:20px 65px;
+    border-radius:30px;
+    border:solid;
+    margin:auto;
+    transition: background-color 1s;
+}
+
+#text-stroke {
+    font-size: 22px;
+}
+
+
+
+.fa-twitter {
+    color: #3cb0dd;
+    }
+
+.fa-instagram {
+    color: #e77ebe;
+}
+
+.fa-twitter:hover {
+    color:white ;
+}
+
+.fa-instagram:hover {
+    color:white ;
+}
+
+.account-in a{
+    margin: 10px;
+}
+
+
+/* トップへ戻るボタン */ 
+.page_top_btn {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    font-weight: bold;
+    margin: 10px;
+    padding: 15px 23px;
+    text-align: center;
+    background: rgb(255, 0, 0);
+    color: #fff;
+    transition: 0.3s0;
+    border-radius: 1000px;
+    margin: auto;
+}
+
+/* マウスオーバー時 */
+.page_top_btn:hover {
+    color: red;
+    background-color: white;
+    border: solid;
+    border-color: red;
+    border-radius: 100px;
+}
+
+/* <div class="b"></div> */
+.b {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s;
+}
+
+.b:hover {
+    transform: scale(0.9);
+}
+
+.header-itm{
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.header-itm:hover {
+    background-color:#fafafa;
+    border: #333 solid 0.3px;
+    transform: scale(1.4);
+    padding:10px 45px;
+    margin-bottom:0px ;
+}
+
+.dis_p {
+    padding-top:60px;
+}
